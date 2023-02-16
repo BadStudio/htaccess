@@ -1,0 +1,6 @@
+RewriteEngine On
+
+### брать изображения с боевого сайта
+RewriteCond %{REQUEST_URI} \.(gif|jpe?g|png)$
+# заменить domain.com на необходимый
+RewriteRule ^(.*)$ https://domain.com/$1 [R,NC,L]
